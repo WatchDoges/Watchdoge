@@ -14,6 +14,8 @@ public class DummyEmailSender implements IEmailSender {
     private ArrayList<String> receivers = new ArrayList<>();
     private String message = "NOT GIVEN";
 
+    public DummyEmailSender() {}
+
     public DummyEmailSender(ArrayList<File> attachments, ArrayList<String> receivers, String message){
         this.attachments = attachments;
         this.receivers = receivers;
